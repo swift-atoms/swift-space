@@ -1,4 +1,4 @@
-import Spatial
+import Space
 import Testing
 
 @Suite struct `Spatial role boundaries` {

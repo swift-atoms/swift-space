@@ -1,4 +1,4 @@
-import Spatial
+import Space
 import Quantizer
 import Tagged
 import Testing

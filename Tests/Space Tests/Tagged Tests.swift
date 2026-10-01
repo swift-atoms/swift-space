@@ -3,7 +3,7 @@ import Scale
 import Tagged
 import Testing
 
-@testable import Spatial
+@testable import Space
 
 @Suite
 struct `Tagged - Displacement Arithmetic` {

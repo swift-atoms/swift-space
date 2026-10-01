@@ -12,10 +12,10 @@ let package = Package(
         .visionOS(.v27),
     ],
     products: [
-        .library(name: "Spatial", targets: ["Spatial"]),
-        .library(name: "Spatial Standard Library Integration", targets: ["Spatial Standard Library Integration"]),
-        .library(name: "Spatial Foundation Library Integration", targets: ["Spatial Foundation Library Integration"]),
-        .library(name: "Spatial Test Support", targets: ["Spatial Test Support"]),
+        .library(name: "Space", targets: ["Space"]),
+        .library(name: "Space Standard Library Integration", targets: ["Space Standard Library Integration"]),
+        .library(name: "Space Foundation Library Integration", targets: ["Space Foundation Library Integration"]),
+        .library(name: "Space Test Support", targets: ["Space Test Support"]),
     ],
     dependencies: [
         .package(
@@ -33,48 +33,48 @@ let package = Package(
     ],
     targets: [
         .target(
-            name: "Spatial",
+            name: "Space",
             dependencies: [
                 .product(name: "Tagged", package: "swift-tagged"),
                 .product(name: "Quantizer", package: "swift-quantizer"),
                 .product(name: "Scale", package: "swift-scale"),
             ],
-            path: "Sources/Spatial"
+            path: "Sources/Space"
         ),
         .target(
-            name: "Spatial Standard Library Integration",
+            name: "Space Standard Library Integration",
             dependencies: [
-                .target(name: "Spatial"),
+                .target(name: "Space"),
             ],
-            path: "Sources/Spatial Standard Library Integration"
+            path: "Sources/Space Standard Library Integration"
         ),
         .target(
-            name: "Spatial Foundation Library Integration",
+            name: "Space Foundation Library Integration",
             dependencies: [
-                .target(name: "Spatial"),
-                .target(name: "Spatial Standard Library Integration"),
+                .target(name: "Space"),
+                .target(name: "Space Standard Library Integration"),
             ],
-            path: "Sources/Spatial Foundation Library Integration"
+            path: "Sources/Space Foundation Library Integration"
         ),
         .target(
-            name: "Spatial Test Support",
+            name: "Space Test Support",
             dependencies: [
-                .target(name: "Spatial"),
+                .target(name: "Space"),
             ],
             path: "Tests/Support"
         ),
         .testTarget(
-            name: "Spatial Tests",
+            name: "Space Tests",
             dependencies: [
-                .target(name: "Spatial"),
+                .target(name: "Space"),
                 .product(name: "Tagged", package: "swift-tagged"),
                 .product(name: "Quantizer", package: "swift-quantizer"),
                 .product(name: "Scale", package: "swift-scale"),
-                .target(name: "Spatial Test Support"),
-                .target(name: "Spatial Standard Library Integration"),
-                .target(name: "Spatial Foundation Library Integration"),
+                .target(name: "Space Test Support"),
+                .target(name: "Space Standard Library Integration"),
+                .target(name: "Space Foundation Library Integration"),
             ],
-            path: "Tests/Spatial Tests"
+            path: "Tests/Space Tests"
         ),
     ],
     swiftLanguageModes: [.v6]

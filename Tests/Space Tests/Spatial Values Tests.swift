@@ -1,4 +1,4 @@
-import Spatial
+import Space
 import Tagged
 import Testing
 
