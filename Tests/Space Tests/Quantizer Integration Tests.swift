@@ -3,7 +3,9 @@ import Quantizer
 import Tagged
 import Testing
 
-private enum WideGrid: Quantized {
+private enum WideGrid: Quantized {}
+
+extension WideGrid {
     static var quantum: Double { 1 }
 }
 

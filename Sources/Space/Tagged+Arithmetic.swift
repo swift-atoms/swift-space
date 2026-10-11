@@ -346,7 +346,7 @@ public func == <Space, Scalar: Equatable>(
 ) -> Bool { lhs.underlying == rhs.underlying }
 
 @inlinable
-public func * <Space, Scalar: Swift.Numeric>(
+public func * <Space, Scalar: Swift::Numeric>(
     lhs: Displacement.X<Space>.Value<Scalar>,
     rhs: Displacement.X<Space>.Value<Scalar>
 ) -> Area<Space>.Value<Scalar> {
@@ -354,7 +354,7 @@ public func * <Space, Scalar: Swift.Numeric>(
 }
 
 @inlinable
-public func * <Space, Scalar: Swift.Numeric>(
+public func * <Space, Scalar: Swift::Numeric>(
     lhs: Displacement.Y<Space>.Value<Scalar>,
     rhs: Displacement.Y<Space>.Value<Scalar>
 ) -> Area<Space>.Value<Scalar> {
@@ -362,7 +362,7 @@ public func * <Space, Scalar: Swift.Numeric>(
 }
 
 @inlinable
-public func * <Space, Scalar: Swift.Numeric>(
+public func * <Space, Scalar: Swift::Numeric>(
     lhs: Displacement.Z<Space>.Value<Scalar>,
     rhs: Displacement.Z<Space>.Value<Scalar>
 ) -> Area<Space>.Value<Scalar> {
@@ -370,7 +370,7 @@ public func * <Space, Scalar: Swift.Numeric>(
 }
 
 @inlinable
-public func * <Space, Scalar: Swift.Numeric>(
+public func * <Space, Scalar: Swift::Numeric>(
     lhs: Displacement.X<Space>.Value<Scalar>,
     rhs: Displacement.Y<Space>.Value<Scalar>
 ) -> Area<Space>.Value<Scalar> {
@@ -378,7 +378,7 @@ public func * <Space, Scalar: Swift.Numeric>(
 }
 
 @inlinable
-public func * <Space, Scalar: Swift.Numeric>(
+public func * <Space, Scalar: Swift::Numeric>(
     lhs: Displacement.Y<Space>.Value<Scalar>,
     rhs: Displacement.X<Space>.Value<Scalar>
 ) -> Area<Space>.Value<Scalar> {
@@ -386,7 +386,7 @@ public func * <Space, Scalar: Swift.Numeric>(
 }
 
 @inlinable
-public func * <Space, Scalar: Swift.Numeric>(
+public func * <Space, Scalar: Swift::Numeric>(
     lhs: Displacement.X<Space>.Value<Scalar>,
     rhs: Displacement.Z<Space>.Value<Scalar>
 ) -> Area<Space>.Value<Scalar> {
@@ -394,7 +394,7 @@ public func * <Space, Scalar: Swift.Numeric>(
 }
 
 @inlinable
-public func * <Space, Scalar: Swift.Numeric>(
+public func * <Space, Scalar: Swift::Numeric>(
     lhs: Displacement.Z<Space>.Value<Scalar>,
     rhs: Displacement.X<Space>.Value<Scalar>
 ) -> Area<Space>.Value<Scalar> {
@@ -402,7 +402,7 @@ public func * <Space, Scalar: Swift.Numeric>(
 }
 
 @inlinable
-public func * <Space, Scalar: Swift.Numeric>(
+public func * <Space, Scalar: Swift::Numeric>(
     lhs: Displacement.Y<Space>.Value<Scalar>,
     rhs: Displacement.Z<Space>.Value<Scalar>
 ) -> Area<Space>.Value<Scalar> {
@@ -410,7 +410,7 @@ public func * <Space, Scalar: Swift.Numeric>(
 }
 
 @inlinable
-public func * <Space, Scalar: Swift.Numeric>(
+public func * <Space, Scalar: Swift::Numeric>(
     lhs: Displacement.Z<Space>.Value<Scalar>,
     rhs: Displacement.Y<Space>.Value<Scalar>
 ) -> Area<Space>.Value<Scalar> {
@@ -418,7 +418,7 @@ public func * <Space, Scalar: Swift.Numeric>(
 }
 
 @inlinable
-public func * <Space, Scalar: Swift.Numeric>(
+public func * <Space, Scalar: Swift::Numeric>(
     lhs: Extent.X<Space>.Value<Scalar>,
     rhs: Extent.X<Space>.Value<Scalar>
 ) -> Area<Space>.Value<Scalar> {
@@ -426,7 +426,7 @@ public func * <Space, Scalar: Swift.Numeric>(
 }
 
 @inlinable
-public func * <Space, Scalar: Swift.Numeric>(
+public func * <Space, Scalar: Swift::Numeric>(
     lhs: Extent.Y<Space>.Value<Scalar>,
     rhs: Extent.Y<Space>.Value<Scalar>
 ) -> Area<Space>.Value<Scalar> {
@@ -434,7 +434,7 @@ public func * <Space, Scalar: Swift.Numeric>(
 }
 
 @inlinable
-public func * <Space, Scalar: Swift.Numeric>(
+public func * <Space, Scalar: Swift::Numeric>(
     lhs: Extent.Z<Space>.Value<Scalar>,
     rhs: Extent.Z<Space>.Value<Scalar>
 ) -> Area<Space>.Value<Scalar> {
@@ -442,7 +442,7 @@ public func * <Space, Scalar: Swift.Numeric>(
 }
 
 @inlinable
-public func * <Space, Scalar: Swift.Numeric>(
+public func * <Space, Scalar: Swift::Numeric>(
     lhs: Extent.X<Space>.Value<Scalar>,
     rhs: Extent.Y<Space>.Value<Scalar>
 ) -> Area<Space>.Value<Scalar> {
@@ -450,7 +450,7 @@ public func * <Space, Scalar: Swift.Numeric>(
 }
 
 @inlinable
-public func * <Space, Scalar: Swift.Numeric>(
+public func * <Space, Scalar: Swift::Numeric>(
     lhs: Extent.Y<Space>.Value<Scalar>,
     rhs: Extent.X<Space>.Value<Scalar>
 ) -> Area<Space>.Value<Scalar> {
@@ -458,7 +458,7 @@ public func * <Space, Scalar: Swift.Numeric>(
 }
 
 @inlinable
-public func * <Space, Scalar: Swift.Numeric>(
+public func * <Space, Scalar: Swift::Numeric>(
     lhs: Extent.X<Space>.Value<Scalar>,
     rhs: Extent.Z<Space>.Value<Scalar>
 ) -> Area<Space>.Value<Scalar> {
@@ -466,7 +466,7 @@ public func * <Space, Scalar: Swift.Numeric>(
 }
 
 @inlinable
-public func * <Space, Scalar: Swift.Numeric>(
+public func * <Space, Scalar: Swift::Numeric>(
     lhs: Extent.Z<Space>.Value<Scalar>,
     rhs: Extent.X<Space>.Value<Scalar>
 ) -> Area<Space>.Value<Scalar> {
@@ -474,7 +474,7 @@ public func * <Space, Scalar: Swift.Numeric>(
 }
 
 @inlinable
-public func * <Space, Scalar: Swift.Numeric>(
+public func * <Space, Scalar: Swift::Numeric>(
     lhs: Extent.Y<Space>.Value<Scalar>,
     rhs: Extent.Z<Space>.Value<Scalar>
 ) -> Area<Space>.Value<Scalar> {
@@ -482,7 +482,7 @@ public func * <Space, Scalar: Swift.Numeric>(
 }
 
 @inlinable
-public func * <Space, Scalar: Swift.Numeric>(
+public func * <Space, Scalar: Swift::Numeric>(
     lhs: Extent.Z<Space>.Value<Scalar>,
     rhs: Extent.Y<Space>.Value<Scalar>
 ) -> Area<Space>.Value<Scalar> {
@@ -490,7 +490,7 @@ public func * <Space, Scalar: Swift.Numeric>(
 }
 
 @inlinable
-public func * <Space, Scalar: Swift.Numeric>(
+public func * <Space, Scalar: Swift::Numeric>(
     lhs: Measure<1, Space>.Value<Scalar>,
     rhs: Measure<1, Space>.Value<Scalar>
 ) -> Measure<2, Space>.Value<Scalar> {
@@ -498,7 +498,7 @@ public func * <Space, Scalar: Swift.Numeric>(
 }
 
 @inlinable
-public func * <Space, Scalar: Swift.Numeric>(
+public func * <Space, Scalar: Swift::Numeric>(
     lhs: Measure<1, Space>.Value<Scalar>,
     rhs: Measure<2, Space>.Value<Scalar>
 ) -> Measure<3, Space>.Value<Scalar> {
@@ -506,7 +506,7 @@ public func * <Space, Scalar: Swift.Numeric>(
 }
 
 @inlinable
-public func * <Space, Scalar: Swift.Numeric>(
+public func * <Space, Scalar: Swift::Numeric>(
     lhs: Measure<2, Space>.Value<Scalar>,
     rhs: Measure<1, Space>.Value<Scalar>
 ) -> Measure<3, Space>.Value<Scalar> {
