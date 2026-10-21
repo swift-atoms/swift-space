@@ -1,5 +1,5 @@
-import Space
 import Quantizer
+import Space
 import Testing
 
 enum TestQuantizedSpace: Quantizer::Quantized {}

@@ -1,5 +1,5 @@
-import Space
 import Quantizer
+import Space
 import Tagged
 import Testing
 

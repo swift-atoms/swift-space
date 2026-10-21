@@ -1,5 +1,5 @@
-public import Tagged
 public import Quantizer
+public import Tagged
 
 extension Tagged::Tagged where Underlying: BinaryFloatingPoint {
 
@@ -30,8 +30,7 @@ extension Tagged::Tagged where Tag: Spatial, Tag.Space: Quantizer::Quantized, Un
 
     @inlinable
     public var ticks: Int64 {
-        do { return try ticks(as: Int64.self) }
-        catch { preconditionFailure("Spatial ticks do not fit Int64: \(error)") }
+        do { return try ticks(as: Int64.self) } catch { preconditionFailure("Spatial ticks do not fit Int64: \(error)") }
     }
 
     public func ticks<T: FixedWidthInteger>(as type: T.Type) throws(Quantizer<Underlying>.Error) -> T {
