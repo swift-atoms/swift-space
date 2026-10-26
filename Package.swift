@@ -3,7 +3,7 @@
 import PackageDescription
 
 let package = Package(
-    name: "swift-spatial",
+    name: "swift-space",
     platforms: [
         .macOS(.v27),
         .iOS(.v27),
