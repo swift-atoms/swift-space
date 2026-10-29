@@ -17,6 +17,11 @@ let package = Package(
         .library(name: "Space Foundation Library Integration", targets: ["Space Foundation Library Integration"]),
         .library(name: "Space Test Support", targets: ["Space Test Support"]),
     ],
+    traits: [
+        .trait(name: "Quantizer", description: "Grid quantization of spatial values"),
+        .trait(name: "Scale", description: "Scaling spatial values by dimensionless scale factors"),
+        .default(enabledTraits: []),
+    ],
     dependencies: [
         .package(
             url: "https://github.com/swift-atoms/swift-tagged.git",
@@ -36,8 +41,8 @@ let package = Package(
             name: "Space",
             dependencies: [
                 .product(name: "Tagged", package: "swift-tagged"),
-                .product(name: "Quantizer", package: "swift-quantizer"),
-                .product(name: "Scale", package: "swift-scale"),
+                .product(name: "Quantizer", package: "swift-quantizer", condition: .when(traits: ["Quantizer"])),
+                .product(name: "Scale", package: "swift-scale", condition: .when(traits: ["Scale"])),
             ],
             path: "Sources/Space"
         ),
@@ -68,8 +73,8 @@ let package = Package(
             dependencies: [
                 .target(name: "Space"),
                 .product(name: "Tagged", package: "swift-tagged"),
-                .product(name: "Quantizer", package: "swift-quantizer"),
-                .product(name: "Scale", package: "swift-scale"),
+                .product(name: "Quantizer", package: "swift-quantizer", condition: .when(traits: ["Quantizer"])),
+                .product(name: "Scale", package: "swift-scale", condition: .when(traits: ["Scale"])),
                 .target(name: "Space Test Support"),
                 .target(name: "Space Standard Library Integration"),
                 .target(name: "Space Foundation Library Integration"),

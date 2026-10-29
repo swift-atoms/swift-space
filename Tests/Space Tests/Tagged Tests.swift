@@ -1,5 +1,6 @@
-import Quantizer
-import Scale
+#if Scale
+    import Scale
+#endif
 import Tagged
 import Testing
 
@@ -32,29 +33,35 @@ struct `Tagged - Displacement Arithmetic` {
         #expect(result == -10.0)
     }
 
-    @Test
-    func `displacement scaling by scale`() {
-        let dx: Displacement.X<TestSpace>.Value<Double> = Tagged::Tagged(10.0)
-        let result1 = dx * Scale(2.0)
-        let result2 = Scale(2.0) * dx
-        #expect(result1 == 20.0)
-        #expect(result2 == 20.0)
-    }
+    #if Scale
+        @Test
+        func `displacement scaling by scale`() {
+            let dx: Displacement.X<TestSpace>.Value<Double> = Tagged::Tagged(10.0)
+            let result1 = dx * Scale(2.0)
+            let result2 = Scale(2.0) * dx
+            #expect(result1 == 20.0)
+            #expect(result2 == 20.0)
+        }
+    #endif
 
-    @Test
-    func `displacement division by scale`() {
-        let dx: Displacement.X<TestSpace>.Value<Double> = Tagged::Tagged(10.0)
-        let result = dx / Scale(2.0)
-        #expect(result == 5.0)
-    }
+    #if Scale
+        @Test
+        func `displacement division by scale`() {
+            let dx: Displacement.X<TestSpace>.Value<Double> = Tagged::Tagged(10.0)
+            let result = dx / Scale(2.0)
+            #expect(result == 5.0)
+        }
+    #endif
 
-    @Test
-    func `displacement ratio returns scale`() {
-        let dx1: Displacement.X<TestSpace>.Value<Double> = Tagged::Tagged(10.0)
-        let dx2: Displacement.X<TestSpace>.Value<Double> = Tagged::Tagged(2.0)
-        let ratio: Scale<1, Double> = dx1 / dx2
-        #expect(ratio.value == 5.0)
-    }
+    #if Scale
+        @Test
+        func `displacement ratio returns scale`() {
+            let dx1: Displacement.X<TestSpace>.Value<Double> = Tagged::Tagged(10.0)
+            let dx2: Displacement.X<TestSpace>.Value<Double> = Tagged::Tagged(2.0)
+            let ratio: Scale<1, Double> = dx1 / dx2
+            #expect(ratio.value == 5.0)
+        }
+    #endif
 }
 
 @Suite
@@ -146,12 +153,14 @@ struct `Tagged - Magnitude Arithmetic` {
         #expect(result == 7.0)
     }
 
-    @Test
-    func `magnitude scaling`() {
-        let m: Magnitude<TestSpace>.Value<Double> = Tagged::Tagged(10.0)
-        let result = m * Scale(2.0)
-        #expect(result == 20.0)
-    }
+    #if Scale
+        @Test
+        func `magnitude scaling`() {
+            let m: Magnitude<TestSpace>.Value<Double> = Tagged::Tagged(10.0)
+            let result = m * Scale(2.0)
+            #expect(result == 20.0)
+        }
+    #endif
 
     @Test
     func `coordinate + magnitude = coordinate`() {
