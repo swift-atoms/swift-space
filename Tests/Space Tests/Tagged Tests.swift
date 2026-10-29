@@ -1,10 +1,11 @@
-#if Scale
-    import Scale
-#endif
 import Tagged
 import Testing
 
 @testable import Space
+
+#if Scale
+    import Scale
+#endif
 
 @Suite
 struct `Tagged - Displacement Arithmetic` {
