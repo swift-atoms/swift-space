@@ -20,7 +20,6 @@ let package = Package(
     traits: [
         .trait(name: "Quantizer", description: "Grid quantization of spatial values"),
         .trait(name: "Scale", description: "Scaling spatial values by dimensionless scale factors"),
-        .default(enabledTraits: []),
     ],
     dependencies: [
         .package(
