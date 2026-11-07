@@ -1,14 +1,6 @@
 public enum Extent {}
 
 extension Extent {
-
-    public enum X<Space> {}
-
-    public enum Y<Space> {}
-
-    public enum Z<Space> {}
-
-    public enum Vector<let N: Int, Space> {}
 }
 
 extension Extent.X: Spatial {}
