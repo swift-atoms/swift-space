@@ -12,7 +12,9 @@
 
     @Suite
     struct `Quantized Tests` {
+    }
 
+    extension `Quantized Tests` {
         @Suite
         struct `Quantize Tests` {
 

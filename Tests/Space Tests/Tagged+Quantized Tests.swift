@@ -22,9 +22,15 @@
         lhs == rhs
     }
 
-    @Suite
-    struct `Tagged+Quantized` {
+enum `Tagged+Quantized Tests` {}
 
+extension `Tagged+Quantized Tests` {
+        @Suite
+        struct `Tagged+Quantized` {
+        }
+}
+
+    extension `Tagged+Quantized Tests`.`Tagged+Quantized` {
         @Suite
         struct `Tick Representation` {
 
