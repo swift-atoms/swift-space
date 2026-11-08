@@ -6,7 +6,7 @@ enum `Spatial Tests` {}
 extension `Spatial Tests` {
     @Suite struct `Spatial role boundaries` {
         enum Frame {}
-        enum OtherFrame {}
+        fileprivate enum OtherFrame {}
 
         @Test func `coordinate difference preserves its displacement role`() {
             let start = Coordinate.X<Frame>.Value<Int>(-8)
