@@ -10,9 +10,9 @@
         static var quantum: Double { 1 }
     }
 
-enum `Quantizer Integration Tests` {}
+    enum `Quantizer Integration Tests` {}
 
-extension `Quantizer Integration Tests` {
+    extension `Quantizer Integration Tests` {
         @Suite struct `Spatial values use explicit grid quantization` {
             @Test func `Spatial values have no implicit machine tick bound`() throws {
                 let value = Coordinate.X<WideGrid>.Value<Double>(0x1p80)
@@ -21,5 +21,5 @@ extension `Quantizer Integration Tests` {
                 #expect(throws: Quantizer<Double>.Error.outOfRange) { try value.ticks(as: Int64.self) }
             }
         }
-}
+    }
 #endif

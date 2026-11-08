@@ -22,13 +22,13 @@
         lhs == rhs
     }
 
-enum `Tagged+Quantized Tests` {}
+    enum `Tagged+Quantized Tests` {}
 
-extension `Tagged+Quantized Tests` {
+    extension `Tagged+Quantized Tests` {
         @Suite
         struct `Tagged+Quantized` {
         }
-}
+    }
 
     extension `Tagged+Quantized Tests`.`Tagged+Quantized` {
         @Suite

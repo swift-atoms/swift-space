@@ -3,7 +3,7 @@
     import Space
     import Testing
 
-    fileprivate enum TestQuantizedSpace: Quantizer::Quantized {}
+    private enum TestQuantizedSpace: Quantizer::Quantized {}
 
     extension TestQuantizedSpace {
         typealias Scalar = Double
